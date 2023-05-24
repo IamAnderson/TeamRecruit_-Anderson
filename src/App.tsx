@@ -58,7 +58,7 @@ function App() {
 
                       <div className='flex items-center gap-4 w-full border border-[#27225225] rounded-[6px] p-4'>
                         <img src={master_card_icon} alt="" className='w-[30px] h-[30px] object-cover' />
-                        <input type="number" placeholder='2412  -  7512  -  3412  -  3456' min={12 || "12"} max={12 || "12"}
+                        <input type="number" placeholder='2412  -  7512  -  3412  -  3456' min={12 || "12"} max={"12"}
                         className='placeholder:text-[#27225294] text-[18px] lg:text-[20px] font-semibold border-none focus:outline-none w-full' />
 
                         <span className='flex items-end justify-end lg:w-full'> <BsCheckCircleFill size={"19.65px"} className="text-sky-400" /> </span>
@@ -74,7 +74,7 @@ function App() {
 
                         <div className='flex items-center w-full border border-[#27225225] rounded-[6px] p-4'>
                           <div className='flex items-center justify-center w-full'>
-                            <input type="number" placeholder='' min={3 || "3"} max={"3" || "4"}
+                            <input type="number" placeholder='' min={"3"} max={"3" || "4"}
                             className='flex justify-center placeholder:text-[#27225294] text-[20px] font-semibold border-none focus:outline-none w-[20%]' />
                           </div>
                           
