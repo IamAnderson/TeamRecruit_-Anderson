@@ -61,7 +61,7 @@ function App() {
                         <input type="number" placeholder='2412  -  7512  -  3412  -  3456' min={12 || "12"} max={12 || "12"}
                         className='placeholder:text-[#27225294] text-[20px] font-semibold border-none focus:outline-none w-full' />
 
-                        <span className='flex items-end justify-end w-full'> <BsCheckCircleFill size={"19.65px"} className="text-sky-400" /> </span>
+                        <span className='flex items-end justify-end lg:w-full'> <BsCheckCircleFill size={"19.65px"} className="text-sky-400" /> </span>
                       </div>
                     </>
 
