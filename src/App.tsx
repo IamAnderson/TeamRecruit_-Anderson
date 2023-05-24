@@ -74,7 +74,7 @@ function App() {
 
                         <div className='flex items-center w-full border border-[#27225225] rounded-[6px] p-4'>
                           <div className='flex items-center justify-center w-full'>
-                            <input type="number" placeholder='' min={3 || "3"} max={"3" || 3 || "4" || 4}
+                            <input type="number" placeholder='' min={3 || "3"} max={"3" || "4"}
                             className='flex justify-center placeholder:text-[#27225294] text-[20px] font-semibold border-none focus:outline-none w-[20%]' />
                           </div>
                           
