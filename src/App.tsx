@@ -18,7 +18,7 @@ function App() {
     e.preventDefault();
 
     //req to send payments
-  }
+  };
 
   return (
     <>
@@ -58,9 +58,8 @@ function App() {
 
                       <div className='flex items-center gap-4 w-full border border-[#27225225] rounded-[6px] p-4'>
                         <img src={master_card_icon} alt="" className='w-[30px] h-[30px] object-cover' />
-                        <input type="number" placeholder='2412  -  7512  -  3412  -  3456' min={0} max={999999999999}
+                        <input type="tel" placeholder='2412  -  7512  -  3412  -  3456' inputMode="numeric" pattern="[0-9]{16}" maxLength={16}
                         className='placeholder:text-[#27225294] text-[18px] lg:text-[20px] font-semibold border-none focus:outline-none w-full' />
-
                         <span className='flex items-end justify-end lg:w-full'> <BsCheckCircleFill size={"19.65px"} className="text-sky-400" /> </span>
                       </div>
                     </>
@@ -74,7 +73,7 @@ function App() {
 
                         <div className='flex items-center w-full border border-[#27225225] rounded-[6px] p-4'>
                           <div className='flex items-center justify-center w-full'>
-                            <input type="number" placeholder='' min={000} max={9999}
+                            <input type="tel" placeholder='' minLength={3} maxLength={4}
                             className='flex justify-center placeholder:text-[#27225294] text-[20px] font-semibold border-none focus:outline-none w-[20%]' />
                           </div>
                           
@@ -90,14 +89,14 @@ function App() {
 
                         <div className='flex items-center gap-4 w-full'>
                           <div className='flex items-center justify-center border border-[#27225225] rounded-[6px] w-full p-4'>
-                            <input type="number" placeholder='' min={3 || "3"} max={3 || "3"}
+                            <input type="tel" placeholder='' minLength={1} maxLength={2}
                             className='flex justify-center border-none placeholder:text-[#27225294] text-[20px] font-semibold focus:outline-none w-[50%]' />
                           </div>
                           
                             <span className='text-[18px] font-bold'> / </span>
 
                             <div className='flex items-center justify-center border border-[#27225225] rounded-[6px] w-full p-4'>
-                              <input type="number" placeholder='' min={3 || "3"} max={3 || "3"}
+                              <input type="tel" placeholder='' minLength={1} maxLength={2}
                               className='flex justify-center border-none placeholder:text-[#27225294] text-[20px] font-semibold focus:outline-none w-[50%]' />
                             </div>
                         </div>
