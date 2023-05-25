@@ -13,7 +13,6 @@ import master_card_icon_ from "./assets/mastercard_.png";
 import chip from "./assets/chip.png";
 
 function App() {
-
   const handlePayment = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
